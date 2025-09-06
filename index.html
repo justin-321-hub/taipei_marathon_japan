@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>🏃‍♂臺北マラソンスマートカスタマーサービスセンター</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- 頂部區塊：公司資訊 -->
+    <header class="topbar">
+      <img src="https://raw.githubusercontent.com/justin-321-hub/taipei_marathon/refs/heads/main/assets/logo.png" class="logo" alt="logo" />
+      <div class="brand">
+        <div class="title">🏃‍♂️ 臺北マラソンスマートカスタマーサービスセンター</div>
+        <div class="subtitle">レース前とレース後の包括的なサポートを提供する専属マラソンコンサルタント</div>
+      </div>
+    </header>
+
+    <!-- 主體：聊天區 -->
+    <main class="main">
+      <div id="messages" class="messages"></div>
+
+      <!-- 思考中：等待 API 完成前顯示。預設隱藏，JS 以 .hidden 切換 -->
+      <div id="thinking" class="thinking hidden" role="status" aria-live="polite" aria-busy="true">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="thinking-text">カスタマーサービスが検討しており、すぐに解決策が見つかりました。</span>
+      </div>
+    </main>
+
+    <!-- 輸入列（已移除語音按鈕） -->
+    <footer class="composer">
+      <textarea id="txtInput" class="input"
+          rows="1"
+          placeholder="メッセージを入力します（改行するにはShift+Enter、送信するにはEnter）"
+          enterkeyhint="send" autocomplete="off" autocapitalize="off" autocorrect="off"></textarea>
+      <button id="btnSend" class="btn btn-primary">送り出す</button>
+    </footer>
+
+    <!-- 已移除語音播放/暫停 SVG 與麥克風按鈕 -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+
+
+
